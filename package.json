@@ -4,9 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "prebuild": "chmod +x node_modules/.bin/vite || true",
     "dev": "vite",
-    "build": "vite build",
+    "build": "chmod +x node_modules/.bin/vite && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
